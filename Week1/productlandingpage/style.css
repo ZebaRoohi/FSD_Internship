@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+.logo img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    outline: 2px solid red;
+}
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px
+}
+.items a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.items a:hover{
+    color: red;
+}
+.active{
+    color:red !important;
+}
+button{
+    font-size: 1.5rem;
+    background:linear-gradient(to right,#b60707da,#e41a1a);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+   transition: background 0.5s ease,color 0.5s ease;
+}
+button:hover{
+background: #fff;
+color: #e41a1a;
+}
+.container{
+    max-width: 90rem;
+    margin: 2rem auto;
+    padding: 0 2rem;   
+}
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+.info{
+    color: red;
+    font-size: 1rem;
+    margin-bottom: 0.9rem;
+
+}
+.hero-heading{
+    font-size: 3rem;
+    margin-bottom: 0.9rem;
+}
+.hero-sub-heading{
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+.users{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+.user{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+.learn-more{
+    align-self: start;
+    margin-top: 3rem;
+}
+.hero-image{
+    padding: 50px;
+}
+.img-fluid{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+@media only screen and (max-width:800px) {
+    .items{
+        display: none;
+    }
+    .row{
+        grid-template-columns: 1fr;
+    }
+    .learn-more{
+        align-self: start;
+        margin: 1rem 0;
+    }
+    .hero-heading{
+        font-size: 2rem;
+        margin-bottom: 0.3rem;
+    }
+}
