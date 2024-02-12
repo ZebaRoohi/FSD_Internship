@@ -1,0 +1,26 @@
+Codes:
+1.const numFruits = parseInt(prompt("Enter the number of fruits:"));
+const fruits = [];
+for (let i = 0; i < numFruits; i++) {
+    const fruit = prompt("Enter fruit " + (i + 1) + ":");
+    fruits.push(fruit);
+}
+console.log("Fruits List:");
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
+2. const startNumber = parseInt(prompt("Enter the start number:"));
+console.log("Numbers in Reverse:");
+for (let i = startNumber; i >= 1; i--) {
+    console.log(i);
+}
+3. const num = parseInt(prompt("Enter the number for the multiplication table:"));
+let multiplier = 1;
+
+console.log("Multiplication Table for " + num + ":");
+while (multiplier <= 10) {
+    const result = num * multiplier;
+    console.log(num + " * " + multiplier + " = " + result);
+    multiplier++;
+}
+
