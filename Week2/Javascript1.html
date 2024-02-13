@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//Fuction scope
+        /*function functionScopeEx(){
+            var x=10;// var x is the fn scope
+            if(true){
+                var y=20; //var is fn scope not block scope
+                console.log('Inside of block',x);
+                console.log('Inside of block',y)
+            }
+            console.log('Outside of block',x);
+            console.log('Outside of block',y)
+        }
+        functionScopeEx()*/
+//Block scope
+       /* function blockScopeEx(){
+            let a=30;// block scope
+            const b=40; //block scope
+
+            if(true){
+                let c=50 ;//block scope
+                const d=60; //block scope
+                console.log('Inside of blokc',a)
+                console.log('Inside of blokc',b)
+                console.log('Inside of blokc',c)
+                console.log('Inside of blok',d)
+            }
+            console.log('Outside of blokc',a)
+            console.log('Outside of blokc',b)
+            console.log('Outside of blokc',c)// not accesible as c is block scope
+            console.log('Outside of blokc',d)//not accesible as d is block scope
+        }
+        blockScopeEx()*/
+//Hoisting...variable are declared on top before the initialization
+       /*console.log(a); //undefine
+        var a=5;
+        console.log(a)
+   
+        console.log(b) //Reference err
+        let b=10;
+        console.log(b)
+        
+        console.log(c) //Reference err
+        const c=15;
+        console.log(c)*/
+
+//Data types :Primitive(single)
+        /*let number=10;
+        console.log(number,typeof(number));
+
+        let str="string data type";
+        console.log(str,typeof(str));
+
+        let bool=true;
+        console.log(bool,typeof(bool))
+        //true=1,false=0
+
+        let undf;
+        console.log(undf,typeof(undf))
+
+        let c=null;
+        console.log(c,typeof(c));
+
+    //  Non-primitive(multiple)
+        let person={
+            name:'John',
+            age:30,
+            isStudent:false
+        }
+        console.log(person,typeof(person));
+
+
+        let arr=['red','green','blue'];
+        console.log(arr,typeof(arr));
+
+        let today=new Date();
+        console.log(today,typeof(today))
+
+        let colors=new Map();
+        colors.set('red',10);
+        console.log(colors,typeof(colors))
+
+        let unquiNumbers=new Set([1,2,3,4,5]);
+        console.log(unquiNumbers,typeof(unquiNumbers))*/
+
+//Loops:forloop,whileloop(control flows)
+        /*for(let i=0;i<=5;i++){
+            console.log(i)
+        }
+    //by taking from user
+    //  let n=prompt('Enter the number')
+    //  for (let i=n;i<=n;i++){
+    //     console.log(n)
+    //  }
+
+    const fruits=['apple','banana','kiwi'];
+    for(let i=0;i<fruits.length;i++){
+        console.log(fruits[i])
+    }
+
+    //while loop:condition will be true
+
+        let count=0;
+        while(count<5){
+            console.log(count);
+            count++;
+        }
+    //1 to 100 divible by 7 and 9
+        let number=1;
+        console.log('Number divisible by 9 and 7');
+        while(number<=100){
+            if(number%9===0 && number%7===0){
+                console.log(number)
+            }
+            number++;
+        }*/
+
+//Functions:l*b
+        function calRecArea(length,breadth){
+            return length*breadth
+        }
+        const a=5;
+        const b=6;
+        const area=calRecArea(a,b);
+        console.log('Area of rect is',area)
+
+     //printing even numbers
+        function even(number){
+            return number%2===0;
+        }
+        const num=19;
+        console.log(num +' is even :'+even(num));
+
+    //palindrome--var.split('').reverse().join('')
+        /*function palindrome(str){
+            let pal=str.split('').reverse().join('');
+            if(pal==str){
+                console.log(`${str} is a palindrome`)
+            }else{
+                console.log(`${str} is not a palindrome`)
+            }
+
+        }
+        const str1=prompt('Enter a string');
+        const res=palindrome(str1);*/
+
+//Closure function-access to outer fn from inner fn
+        function outerFn(){
+            let outvar='Iam from outer function';
+            function innerFn(){
+                console.log(outvar)
+            }
+            return innerFn()
+        }
+        outerFn()
+
+
+        </script>
+</body>
+</html>
