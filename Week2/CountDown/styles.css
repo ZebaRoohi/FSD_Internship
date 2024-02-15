@@ -1,0 +1,39 @@
+.section-center{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2rem;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.gift-img img{
+    max-width: 100%;
+    height: auto;
+}
+.gift-info{
+    text-align: center;
+}
+.gift-info h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.gift-info .giveaway{
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 1.5rem;
+}
+.deadline{
+    display: flex;
+    justify-content: center;
+}
+.deadline-format{
+    background: #f5f5f5;
+    color: #333;
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    border-radius: 5px;
+}
+.deadline-format h4{
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}

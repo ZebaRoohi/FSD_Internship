@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #hoverEle{
+        border: 1px solid red;
+        padding: 20px;
+        margin: 20px;
+
+    }
+</style>
+<body>
+    <div id="hoverEle" onmouseover="handleMouseOver()" onmouseout="handleMouseOut()">Hover your mouse</div>
+
+    <p>Press a key to see effect in console</p>
+    <script>
+        function handleMouseOver(){
+            document.getElementById('hoverEle').style.backgroundColor='green';
+        }
+        function handleMouseOut(){
+            document.getElementById('hoverEle').style.backgroundColor='yellow';
+        }
+        document.addEventListener('keydown',(event)=>{
+            console.log('Key Pressed (keydown)',event.key)
+        });
+        document.addEventListener('keyup',(event)=>{
+            console.log('Key pressed (keyup)',event.key)
+        })
+    </script>
+</body>
+</html>

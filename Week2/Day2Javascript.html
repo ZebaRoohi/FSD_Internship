@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .content{
+        display: block;
+    }
+    .highlight{
+        color: red;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <h2>Example of Dom Methods</h2>
+    <div id="myDiv" style="width: 100px; height: 100px; background-color: lightblue;"></div>
+    <button onclick="changeColor()">Change Color</button>
+
+    <p class="content">This paragraph can toggeled on click</p>
+    <p class="content">Another paragrap</p>
+    <button onclick="toggleVisibility()">Toggle Visiblity</button>
+
+    <h1>Heading1</h1>
+    <h2>Heading2</h2>
+    <h3>Heading3</h3>
+    <button onclick="addHighligt()">Add Highlight</button>
+
+    <div>
+        <p>This is para inside div</p>
+    </div>
+    <p>Another para outside div</p>
+
+    <p class="query">This is a para of queryselector all</p>
+    <div class="query">This is a div of queryselector all</div>
+    <script>
+//String 
+        /*const str='Hello world'
+        const upperCasestr=str.toUpperCase()
+        console.log(upperCasestr)
+       const lowerCasestr=str.toLowerCase()
+       console.log(lowerCasestr)
+
+       const charstr=str.charAt(2)
+       console.log(charstr)
+      
+       const indexstr=str.indexOf('world');
+       console.log(indexstr)
+
+       const includestr=str.includes('universe')
+       console.log(includestr)
+
+       const substr=str.substring(6,11)
+       console.log(substr)*/
+
+//Array methods
+        /*const colors=['red','green']
+        colors.push('orange');
+        console.log(colors)
+
+       const removepop=colors.pop();
+       console.log(removepop)
+       console.log(colors)
+
+        const joinedcolors=colors.join(';');
+        console.log(joinedcolors)
+
+      //forEach
+        const numbers=[1,2,3]
+        numbers.forEach(function(number){
+            console.log(number*2)
+        })
+
+     //map create a new
+        const doubleNumbers=numbers.map(function(number){
+            return number*2
+        })
+        console.log(doubleNumbers)
+
+    //filter new array by passing some condition
+        const num=[1,2,3,4,5];
+        const evenNumbers=num.filter(function(number){
+            return number % 2===0;
+        })
+        console.log(evenNumbers)*/
+
+
+//Dom and its methods.....
+       function changeColor(){
+        const divChange=document.getElementById('myDiv');
+        divChange.style.backgroundColor='red'
+
+       }
+
+//getElementByClass
+        function toggleVisibility(){
+            const elements=document.getElementsByClassName('content');
+            for(const ele of elements){
+                ele.style.display=ele.style.display==='none'?'block':'none'
+            }
+        }
+//getElementbyTag
+        function addHighligt(){
+            const headings=document.getElementsByTagName('h1');
+            for(const heading of headings){
+                heading.classList.add('highlight')
+            }
+        }
+//querySelector
+            const para=document.querySelector('div p');
+            para.style.fontWeight='bold';
+
+//query selector all
+        const apply=document.querySelectorAll('.query');
+        apply.forEach(ele=>{
+            ele.style.fontWeight='bold'
+        })
+
+    </script>
+</body>
+</html>
