@@ -1,0 +1,28 @@
+[
+    {
+        "heading":"Taj Mahal",
+        "paragrah":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sed libero hic fugiat voluptates, accusantium ducimus cupiditate. Unde hic ad beatae, numquam animi commodi, necessitatibus perferendis iste, facere provident quam.",
+        "imagePath":"../images/tajmahal.jpg"
+    },
+    {
+        "heading":"Effiel Towe",
+        "paragrah":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sed libero hic fugiat voluptates, accusantium ducimus cupiditate. Unde hic ad beatae, numquam animi commodi, necessitatibus perferendis iste, facere provident quam.",
+        "imagePath":"../images/effieltower.jpg"
+    },
+    {
+        "heading":"Pyramid of Gaza",
+        "paragrah":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sed libero hic fugiat voluptates, accusantium ducimus cupiditate. Unde hic ad beatae, numquam animi commodi, necessitatibus perferendis iste, facere provident quam.",
+        "imagePath":"../images/pyramidgaza.jpg"
+    },
+
+    {
+        "heading":"Statue of Liberty",
+        "paragrah":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sed libero hic fugiat voluptates, accusantium ducimus cupiditate. Unde hic ad beatae, numquam animi commodi, necessitatibus perferendis iste, facere provident quam.",
+        "imagePath":"../images/statueliberty.jpg"
+    },
+    {
+        "heading":"Colessum",
+        "paragrah":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sed libero hic fugiat voluptates, accusantium ducimus cupiditate. Unde hic ad beatae, numquam animi commodi, necessitatibus perferendis iste, facere provident quam.",
+        "imagePath":"../images/colessum.jpg"
+    }
+]
