@@ -1,0 +1,23 @@
+.word-letetr-counter{
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: #d5eef5;
+  border-radius: 8px;
+}
+.input-textarea{
+  height: 200px;
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.counter-results p{
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-align: center;
+  color: blue;
+}
