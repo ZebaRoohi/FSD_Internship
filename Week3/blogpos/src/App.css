@@ -1,0 +1,56 @@
+.blogs{
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0 auto;
+  padding: 0;
+}
+.add-data{
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.add-data h2{
+  margin-bottom: 10px;
+  text-align: center;
+}
+.add-data label{
+  display: block;
+  margin-bottom: 5px;
+}
+.add-data input,.add-data textarea{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.postview{
+  padding-top: 20px;
+}
+.postview h2{
+  margin-bottom: 10px;
+  text-align: center;
+}
+.list-view{
+  list-style: none;
+  padding: 0;
+}
+.listdisplay{
+  border: 1px solid #ccc;
+  padding: 10px;
+  /* margin-bottom: 10px; */
+}
+.listdisplay strong{
+  font-size: 16px;
+  display: block;
+  margin-bottom: 10px;
+}
+.btn{
+  padding: 8px 10px;
+  background-color: #7287db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: #ccc;
+}
